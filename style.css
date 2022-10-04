@@ -1,14 +1,21 @@
 body {
-    background-color: rgb(73, 71, 71);
-    margin: 18rem;
+  background-color: rgb(73, 71, 71);
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  width: 30rem;
+  padding: 1rem;
+  margin: 3rem auto;
 }
 
 input {
-    width: 25rem;
-    margin-bottom: 1rem;
-    display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+  box-sizing: border-box;
 }
 
 button {
-    display: block;
+  display: block;
 }
