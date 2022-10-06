@@ -33,12 +33,44 @@ input:focus {
   border-color: rgb(22, 174, 125);
 }
 
+.verify-type {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.verify-type input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.contact input {
+width: auto;
+margin-right: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.checkbox input {
+  width: auto;
+  margin-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
 button {
   display: block;
   font-family: inherit;
   background-color: rgb(90, 211, 154);
   color: white;
   border: 1px solid rgb(90, 211, 154);
+  margin-top: 1rem;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;

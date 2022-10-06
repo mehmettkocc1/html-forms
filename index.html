@@ -5,23 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Formu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form action="/" method="GET">
       <label for="name-surname">Lütfen isminizi giriniz</label>
-      <input type="text" name="user-name" id="name-surname"/>
+      <input type="text" name="user-name" id="name-surname" />
       <label for="email">Lütfen email adresinizi giriniz</label>
-      <input type="email" name="user-email" id="email">
+      <input type="email" name="user-email" id="email" />
       <label for="age">Lütfen yaşınızı belirtiniz</label>
-      <input type="number" name="user-age" id="age">
+      <input type="number" name="user-age" id="age" />
       <label for="birthday">Lütfen doğum tarihinizi giriniz</label>
-      <input type="date" name="user-birthday" id="birthday">
+      <input type="date" name="user-birthday" id="birthday" />
       <label for="password">Lütfen şifrenizi giriniz</label>
-      <input type="password" name="user-password" id="password">
+      <input type="password" name="user-password" id="password" />
+      <hr />
+      <h2>Hesabınızı nasıl doğrulamak istersiniz?</h2>
+      <div class="verify-type">
+        <input type="radio" name="verify" id="sms-verify" value="verify-via-sms"/>
+        <label for="sms-verify">Kısa mesajla doğrula</label>
+      </div>
+      <div class="verify-type">
+        <input type="radio" name="verify" id="email-verify" value="verify-via-email"/>
+        <label for="email-verify">E-postayla doğrula</label>
+      </div>
+      <div class="verify-type">
+        <input type="radio" name="verify" id="phonecall-verify" value="verify-via-phonecall"/>
+        <label for="phonecall-verify">Telefon görüşmesiyle doğrula</label>
+      </div>
+      <h2>Sizinle nasıl iletişime geçelim?</h2>
+      <div class="contact">
+        <input type="checkbox" name="contact" id="contact-via-phone" value="phone">
+        <label for="contact-via-phone">Telefonla</label>
+      </div>
+      <div class="contact">
+        <input type="checkbox" name="contact" id="contact-via-email" value="email">
+        <label for="contact-via-email">E-postayla</label>
+      </div>
+      <div class="contact">
+        <input type="checkbox" name="contact" id="-no-contact" value="don't contact">
+        <label for="no-contact">İletişime geçmeyin</label>
+      </div>
+      <div class="checkbox">
+        <label for="agree-terms">Kullanıcı sözleşmesini onaylıyor musunuz?</label>
+        <input type="checkbox" name="terms-conditions" id="agree-terms">
+      </div>
       <button>Onayla</button>
     </form>
   </body>
