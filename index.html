@@ -14,57 +14,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="/" method="GET">
-      <label for="name-surname">Lütfen isminizi giriniz</label>
-      <input type="text" name="user-name" id="name-surname" />
-      <label for="email">Lütfen email adresinizi giriniz</label>
-      <input type="email" name="user-email" id="email" />
-      <label for="age">Lütfen yaşınızı belirtiniz</label>
-      <input type="number" name="user-age" id="age" />
-      <label for="birthday">Lütfen doğum tarihinizi giriniz</label>
-      <input type="date" name="user-birthday" id="birthday" />
-      <label for="password">Lütfen şifrenizi giriniz</label>
-      <input type="password" name="user-password" id="password" />
-      <label for="comment">Lütfen mesajınızı giriniz</label>
-      <textarea name="user-comment" id="comment"></textarea>
-      <label for="fav-color">Lütfen en sevdiğiniz rengi seçiniz</label>
-      <select name="favorite-color" id="fav-color">
-        <option value="black">Siyah</option>
-        <option value="blue">Mavi</option>
-        <option value="green">Yeşil</option>
-      </select>
+    <main>
+      <form action="/" method="GET">
+      <section>
+        <h2>Kişisel Bilgiler</h2>
+        <ul>
+          <li>
+            <label for="name-surname">Lütfen isminizi giriniz</label>
+            <input type="text" name="user-name" id="name-surname" />
+          </li>
+          <li>
+            <label for="email">Lütfen email adresinizi giriniz</label>
+            <input type="email" name="user-email" id="email" />
+          </li>
+          <li>
+            <label for="password">Lütfen şifrenizi giriniz</label>
+            <input type="password" name="user-password" id="password" />
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ayrıntılı Bilgiler</h2>
+        <ul>
+          <li>
+            <label for="age">Lütfen yaşınızı giriniz</label>
+            <input type="number" name="user-age" id="age" />
+          </li>
+          <li>
+            <label for="birthday">Lütfen doğum tarihinizi giriniz</label>
+            <input type="date" name="user-birthday" id="birthday" />
+          </li>
+          <li>
+            <label for="fav-color">Lütfen en sevdiğiniz rengi seçiniz</label>
+            <select name="favorite-color" id="fav-color">
+              <option value="black">Siyah</option>
+              <option value="blue">Mavi</option>
+              <option value="green">Yeşil</option>
+            </select>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+            <label for="comment">Lütfen mesajınızı giriniz</label>
+            <textarea name="user-comment" id="comment"></textarea>
+      </section>
+    
+      <section>
+        <h2>Hesabınızı nasıl doğrulamak istersiniz?</h2>
+        <ul>
+          <li class="verify-type">
+            <input type="radio" name="verify" id="sms-verify" value="verify-via-sms"/>
+            <label for="sms-verify">Kısa mesajla doğrula</label>
+          </li>
+          <li class="verify-type">
+            <input type="radio" name="verify" id="email-verify" value="verify-via-email"/>
+            <label for="email-verify">E-postayla doğrula</label>
+          </li>
+          <li class="verify-type">
+            <input type="radio" name="verify" id="phonecall-verify" value="verify-via-phonecall"/>
+            <label for="phonecall-verify">Telefon görüşmesiyle doğrula</label>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sizinle nasıl iletişime geçelim?</h2>
+        <ul>  
+          <li class="contact">
+            <input type="checkbox" name="contact" id="contact-via-phone" value="phone">
+            <label for="contact-via-phone">Telefonla</label>
+          </li>
+          <li class="contact">
+            <input type="checkbox" name="contact" id="contact-via-email" value="email">
+            <label for="contact-via-email">E-postayla</label>
+          </li>
+          <li class="contact">
+            <input type="checkbox" name="contact" id="-no-contact" value="don't contact">
+            <label for="no-contact">İletişime geçmeyin</label>
+          </li>  
+        </ul>
+      </section>
+
       <hr>
-      <h2>Hesabınızı nasıl doğrulamak istersiniz?</h2>
-      <div class="verify-type">
-        <input type="radio" name="verify" id="sms-verify" value="verify-via-sms"/>
-        <label for="sms-verify">Kısa mesajla doğrula</label>
-      </div>
-      <div class="verify-type">
-        <input type="radio" name="verify" id="email-verify" value="verify-via-email"/>
-        <label for="email-verify">E-postayla doğrula</label>
-      </div>
-      <div class="verify-type">
-        <input type="radio" name="verify" id="phonecall-verify" value="verify-via-phonecall"/>
-        <label for="phonecall-verify">Telefon görüşmesiyle doğrula</label>
-      </div>
-      <h2>Sizinle nasıl iletişime geçelim?</h2>
-      <div class="contact">
-        <input type="checkbox" name="contact" id="contact-via-phone" value="phone">
-        <label for="contact-via-phone">Telefonla</label>
-      </div>
-      <div class="contact">
-        <input type="checkbox" name="contact" id="contact-via-email" value="email">
-        <label for="contact-via-email">E-postayla</label>
-      </div>
-      <div class="contact">
-        <input type="checkbox" name="contact" id="-no-contact" value="don't contact">
-        <label for="no-contact">İletişime geçmeyin</label>
-      </div>
-      <div class="checkbox">
-        <label for="agree-terms">Kullanıcı sözleşmesini onaylıyor musunuz?</label>
-        <input type="checkbox" name="terms-conditions" id="agree-terms">
-      </div>
-      <button>Onayla</button>
-    </form>
+
+      <section>
+        <div class="checkbox">
+          <label for="agree-terms">Kullanıcı sözleşmesini onaylıyor musunuz?</label>
+          <input type="checkbox" name="terms-conditions" id="agree-terms">
+        </div>
+      </section>
+
+      <section>
+        <button type="submit">Onayla</button>
+        <button type="reset">Sil</button>
+      </section>
+
+     </form>
+    </main>
   </body>
 </html>
