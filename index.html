@@ -21,15 +21,15 @@
         <ul>
           <li>
             <label for="name-surname">Lütfen isminizi giriniz</label>
-            <input type="text" name="user-name" id="name-surname" />
+            <input type="text" name="user-name" id="name-surname" required/>
           </li>
           <li>
             <label for="email">Lütfen email adresinizi giriniz</label>
-            <input type="email" name="user-email" id="email" />
+            <input type="email" name="user-email" id="email" required />
           </li>
           <li>
             <label for="password">Lütfen şifrenizi giriniz</label>
-            <input type="password" name="user-password" id="password" />
+            <input type="password" name="user-password" id="password" required minlength="6"/>
           </li>
         </ul>
       </section>
@@ -39,11 +39,11 @@
         <ul>
           <li>
             <label for="age">Lütfen yaşınızı giriniz</label>
-            <input type="number" name="user-age" id="age" />
+            <input type="number" name="user-age" id="age" required min="18"/>
           </li>
           <li>
             <label for="birthday">Lütfen doğum tarihinizi giriniz</label>
-            <input type="date" name="user-birthday" id="birthday" />
+            <input type="date" name="user-birthday" id="birthday" required max="2004-01-01"/>
           </li>
           <li>
             <label for="fav-color">Lütfen en sevdiğiniz rengi seçiniz</label>
