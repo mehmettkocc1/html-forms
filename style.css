@@ -43,6 +43,10 @@ input:focus, textarea:focus {
   border-color: rgb(22, 174, 125);
 }
 
+textarea {
+  resize: vertical;
+}
+
 .verify-type {
   display: flex;
   margin-top: 0.5rem;
